@@ -1,0 +1,179 @@
+:root {
+  --shadow: 0 4px 6px -5px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.hero-section {
+  position: relative;
+  background-color:#000805; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #000805, #12c453);
+}
+
+.Hackathon {
+  position: absolute;
+  z-index: 2;
+  font-size: 1.9rem;
+  padding: 25px;
+  left: 10%;
+  top: 25%;
+  z-index: 1;
+}
+
+.Hackathon h1 {
+  font-family: Poppins;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.Hackathon h3 {
+  font-family: Poppins;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.Hackathon h5 {
+  font-family: Poppins;
+  color: white;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.illustration {
+  position: relative;
+  z-index: 0;
+}
+
+.hero-img {
+  position: absolute;
+  top: 80px;
+  right: 5%;
+  z-index: 0;
+}
+
+#now {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #000805;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px;
+  text-align: center;
+  text-transform: lowercase;
+  transition: background 300ms;
+}
+
+#now:not([disabled]) {
+  cursor: pointer;
+}
+
+#now:hover {
+  background-color: #02482e !important;
+}
+
+.icons {
+  padding: 15px;
+  padding-left: 0px;
+  margin-top: 10px;
+}
+
+.icons a {
+  display: inline-block;
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.icons a:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.about-section {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.themes-section {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  height: 140vh;
+}
+
+.highlights {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlights h1 {
+  padding: 25px;
+  font-family: Poppins;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  margin-bottom: 30px;
+}
+
+
+.countdown li {
+  background: linear-gradient(
+    to bottom right,
+    #000805,
+    #035b29
+  );
+  margin: 5px;
+  border-radius: 10px;;
+  display: inline-block;
+  font-size: 25px;
+  list-style-type: none;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.countdown li span {
+  display: block;
+  font-size: 40px;
+}
+
